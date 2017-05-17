@@ -1,0 +1,16 @@
+{
+  
+  "manifest_version": 2,
+  "name": "EasyOnTheEyes",
+  "version": "0.1",
+  
+  "description": "Simple reminder to take a break from the computer every 20 minutes for at least 20 seconds.",
+  
+  "contents_scripts": [
+    {
+      "matches": ["://*"],
+      "js": ["easyOnTheEyes.js"]
+    }
+  ]
+  
+}
