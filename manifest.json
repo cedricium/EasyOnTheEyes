@@ -12,7 +12,7 @@
       "96": "icons/timer-96.png"
     },
     "default_title": "EasyOnTheEyes",
-    "default_popup": "popup/index.html",
+    "default_popup": "popup/index.html"
   }
   
 }
