@@ -15,11 +15,4 @@
     "default_popup": "popup/index.html",
   }
   
-  "contents_scripts": [
-    {
-      "matches": ["://*"],
-      "js": ["easyOnTheEyes.js"]
-    }
-  ]
-  
 }
