@@ -6,13 +6,26 @@
   
   "description": "Simple reminder to take a break from the computer every 20 minutes for at least 20 seconds.",
   
+  "icons": {
+    "48": "icons/timer-48.png",
+    "96": "icons/timer-96.png"
+  },
+  
   "browser_action": {
     "default_icon": {
       "48": "icons/timer-48.png",
       "96": "icons/timer-96.png"
     },
-    "default_title": "EasyOnTheEyes",
-    "default_popup": "popup/index.html"
+    "default_title": "EasyOnTheEyes"
+  },
+  
+  "permissions": [
+    "alarms",
+    "notifications"
+  ],
+  
+  "background": {
+    "scripts": ["easyOnTheEyes.js"]
   }
   
 }
