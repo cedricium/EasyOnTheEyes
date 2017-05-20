@@ -1,0 +1,47 @@
+html,
+body {
+  margin: 0 auto;
+  height: 100%;
+  background-color: #FAFAFA;
+}
+
+
+#banner {
+  height: 50px;
+  background-color: #00FFBB;
+  
+  background-image:
+    -moz-linear-gradient(
+      left,
+      #05AAA3,
+      #90EC8D
+    );
+  background-image:
+    linear-gradient(
+      right,
+      #05AAA3,
+      #90EC8D
+    );
+}
+
+#main-content {
+  height: 250px;
+  display: flex;
+  align-items: center;
+}
+
+#floating-panel {
+/*  border: thin solid blue;*/
+  
+  background-color: #FFFFFF;
+  margin: 0 auto;
+  height: 200px;
+  width: 80%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15), 0 2px 6px rgba(0,0,0,0.20);
+  border-top: medium solid #00FFBB;
+  text-align: center;
+}
+
+#startBtn {
+  text-transform: uppercase;
+}
