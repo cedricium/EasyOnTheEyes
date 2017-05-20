@@ -3,7 +3,7 @@ var createData = {
       type: "detached_panel",
       url: "panel.html",
       width: 600,
-      height: 325
+      height: 400
     };
 
 // Below is the code used for clicking the icon to start countdown timer (preliminary testing)
