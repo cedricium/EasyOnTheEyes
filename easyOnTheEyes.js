@@ -46,4 +46,14 @@ function notify() {
   });
 }
 
-document.getElementById("startBtn").addEventListener("click", notify);
+// open and attempt to make a connection
+var port = browser.runtime.connect();
+
+function testMessenging() {
+  // once connection is made, send data through port
+//  alert('Testing if this function works...');
+  port.postMessage({message: "Hello from easyOnTheEyes.js!"});
+}
+
+//document.getElementById("startBtn").addEventListener("click", notify);
+document.getElementById("startBtn").addEventListener("click", testMessenging);
