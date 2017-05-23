@@ -27,7 +27,7 @@
   ],
   
   "background": {
-    "scripts": ["easyOnTheEyes.js"]
+    "scripts": ["background.js", "easyOnTheEyes.js"]
   }
   
 }
