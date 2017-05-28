@@ -37,13 +37,6 @@ function getSettings() {
 }
 
 
-// setting the label for the slider with the current slider's value
-var slider = document.getElementById("slider");
-slider.addEventListener("change", function() {
-  document.getElementById("label").textContent = slider.value;
-  console.log(slider.value);
-});
-
 // turning on/off the toggle switch
 var toggle = document.getElementById("toggleswitch");
 toggle.addEventListener("click", function onclick(e) {
@@ -52,4 +45,18 @@ toggle.addEventListener("click", function onclick(e) {
   } else {
     testStop();
   }
+});
+
+
+// setting the label for the slider with the current slider's value
+var slider = document.getElementById("slider");
+slider.addEventListener("change", function() {
+  document.getElementById("label").textContent = slider.value;
+  console.log(slider.value);
+});
+
+var breakSlider = document.getElementById("breakSlider");
+breakSlider.addEventListener("change", function() {
+  document.getElementById("breakLabel").textContent = breakSlider.value;
+  console.log(breakSlider.value);
 });
