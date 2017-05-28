@@ -30,9 +30,7 @@ body {
   align-items: center;
 }
 
-#floating-panel {
-/*  border: thin solid blue;*/
-  
+#floating-panel {  
   background-color: #FFFFFF;
   margin: 0 auto;
   height: 275px;
@@ -91,11 +89,8 @@ body {
 }
 
 
-
-
-
-
-
+/* On/Off Toggle Switch
+---------------------------------------------  */
 .switch {
   position: relative;
   display: inline-block;
@@ -150,4 +145,20 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+/* Time Spent Working Slider
+---------------------------------------------  */
+div#duration {
+  margin: 0 auto;
+  width: 40%;
+}
+
+div#duration>div * {
+  display: inline;
+}
+
+div#duration input {
+  margin: 0 auto;
 }
