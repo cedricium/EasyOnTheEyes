@@ -150,15 +150,29 @@ input:checked + .slider:before {
 
 /* Time Spent Working Slider
 ---------------------------------------------  */
-div#duration {
+div#workLength {
   margin: 0 auto;
   width: 40%;
 }
 
-div#duration>div * {
+div#workLength>div * {
   display: inline;
 }
 
-div#duration input {
+div#workLength input {
+  margin: 0 auto;
+}
+
+
+div#breakLength {
+  margin: 0 auto;
+  width: 40%;
+}
+
+div#breakLength>div * {
+  display: inline;
+}
+
+div#breakLength input {
   margin: 0 auto;
 }
