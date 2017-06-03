@@ -5,8 +5,8 @@ function connected(p) {
   
   portFromCS.onMessage.addListener(function timer(m) {
 //    var message = m;
-    
-    if (m.message != "Cancel Alarms") {
+
+    if (m.message != "Cancel Alarms!") {
       var duration = m.message.duration / 60;
       
       var delayInMinutes = duration;
@@ -14,13 +14,14 @@ function connected(p) {
 
       // setup for creating alarm (may need to use interval())
       browser.alarms.create({
-        delayInMinutes,
-        periodInMinutes
+          delayInMinutes
+//        , periodInMinutes
       });
       console.log("Alarms scheduled.");
-    } else {
-      var clearAlarms = browser.alarms.clearAll();
-      console.log("Alarms cleared.");
+    }
+    else {
+        var clearAlarms = browser.alarms.clearAll();
+        console.log("Alarms cleared.");
     }
     
     browser.alarms.onAlarm.addListener(function(alarm) {
